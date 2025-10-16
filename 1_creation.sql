@@ -1,8 +1,4 @@
-
--- integrity_constraints.sql
--- Contains PK, FK and UNIQUE where structural. For MySQL (InnoDB) -- run first.
-
-SET FOREIGN_KEY_CHECKS = 0; -- temporarily disable to allow creation order flexibility
+SET FOREIGN_KEY_CHECKS = 0;
 CREATE DATABASE IF NOT EXISTS manga_shop;
 USE manga_shop;
 
