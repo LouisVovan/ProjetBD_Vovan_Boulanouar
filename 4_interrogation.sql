@@ -113,7 +113,7 @@ JOIN fournisseur f ON r.ID_fournisseur = f.ID_fournisseur
 LEFT JOIN Manga m ON r.ID_volume = m.ID_volume
 ORDER BY r.Date_commande_f DESC;
 
-SELECT ID_client, nom, Prénom, email
+SELECT ID_client, nom, Prenom, email
 FROM Client
 WHERE ID_client NOT IN (SELECT DISTINCT ID_client FROM commande);
 
@@ -141,7 +141,7 @@ WHERE cmd.montant > (
   SELECT AVG(c2.montant) FROM commande c2 WHERE c2.ID_client = cmd.ID_client
 );
 
-SELECT emp.ID_employer, emp.Nom_e, emp.prénom_e
+SELECT emp.ID_employer, emp.Nom_e, emp.prenom_e
 FROM Employer emp
 WHERE NOT EXISTS (
   SELECT 1 FROM commande cmd WHERE cmd.ID_employer = emp.ID_employer
@@ -160,3 +160,4 @@ FROM Manga m
 WHERE EXISTS (
   SELECT 1 FROM reapprovisionnement r WHERE r.ID_volume = m.ID_volume AND r.Date_reception >= '2025-02-01'
 );
+
