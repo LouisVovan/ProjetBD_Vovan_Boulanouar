@@ -1,4 +1,4 @@
-# 🗄️ Projet Système de Gestion de Base de Données (SGBD)
+# 🗄️ Projet Système de Gestion de Base de Données 
 
 Ce dépôt contient l'intégralité d'un projet de conception et d'implémentation d'une base de données relationnelle, réalisé dans le cadre de notre cursus informatique. Le projet porte sur la gestion d'une **Boutique**.
 
